@@ -6,12 +6,21 @@
     --verdeagua:#005059;
     }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+    
 body {
+    display: flex;
+  flex-direction: column;
 background-color: var(--fundo);
   font-family: "Cedarville Cursive", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: larger;
+
 }
 
 *{
@@ -38,6 +47,8 @@ header {
 
 main{
     margin: 140px;
+     flex: 1;
+  padding: 20px;
 }
 
 main h1{
@@ -104,23 +115,29 @@ dialog{
 
 
 footer.container {
-  text-align: center;
-  background-color: var(--verdemusgo); 
-  bottom: 0;
-  position: fixed;
+    display: flex;
+  background-color: #4D733E;
   width: 100%;
-  
+  text-align: left;
+  color: white;
+  bottom: 0;
+  margin-top: 150px;
 }
 
 footer h2 {
     text-align: center;
-    font-size: 0.99rem;
+    font-size: 1rem;
     color: #ffffff;
     }
+
+footer p, a {
+    margin-top: 22px;
+}
+
     footer p {
     color: #ffffff;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
 
     }
 footer a {
