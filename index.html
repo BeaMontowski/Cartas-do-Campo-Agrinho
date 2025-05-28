@@ -3,75 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.gstatic.com" cros<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">sorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
     <title>Cartas do Campo</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script> 
   </head>
+
   <body>
-   
     <header>
       <h1>Cartas do Campo</h1>
     </header>
 
     <main>
       <h1>Cartas da Terra para a Cidade</h1>
-      <p>Neste espaço, agricultores, feirantes e trabalhadores do campo escrevem cartas para a cidade. São relatos que nascem entre a terra e o céu, escritos com as mãos que semeiam, colhem e sustentam a vida.
-Aqui, eles compartilham suas rotinas, suas alegrias e desafios, seus sentimentos mais íntimos e sua relação – por vezes distante, por vezes próxima – com o mundo urbano.
+      <p>
+        Neste espaço, agricultores, feirantes e trabalhadores do campo escrevem cartas para a cidade. São relatos que nascem entre a terra e o céu, escritos com as mãos que semeiam, colhem e sustentam a vida.
+        Aqui, eles compartilham suas rotinas, suas alegrias e desafios, seus sentimentos mais íntimos e sua relação – por vezes distante, por vezes próxima – com o mundo urbano.
+        Cada carta é um convite ao encontro: entre o campo e a cidade, entre quem planta e quem consome, entre quem vive no silêncio das madrugadas e quem desperta com o barulho dos motores.
+        Que essas palavras toquem o concreto e façam florescer pontes.
+      </p>
 
-Cada carta é um convite ao encontro: entre o campo e a cidade, entre quem planta e quem consome, entre quem vive no silêncio das madrugadas e quem desperta com o barulho dos motores.
-Que essas palavras toquem o concreto e façam florescer pontes.</p>
+      <h2>Leia algumas cartas:</h2>
 
-<section class="container">
+     <section class="container">
+ 
+  <div class="carta">
+    <figure id="fig1">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog1">Ler Carta</button>
+    <dialog id="dialog1">
+      <h2>por Seu Jorge do Vila Pelicanos</h2>
+      <p>
+        Aqui é o Seu Jorge, da beira do rio. Hoje vi a primeira flor do quiabo, verdinha e tímida.  
+        O sol andou forte, mas o vento ajudou.  
+        Enquanto capinava, fiquei pensando em vocês aí — andando rápido, olhando pro relógio.  
+        Será que ainda tem gente que para pra ver uma abelha numa flor?  
+        Aqui a gente vê. A gente aprende com elas.  
+        Tomara que aí ainda dê tempo pra escutar o silêncio das coisas simples.
+      </p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
 
-      <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-    <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-    <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-    <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-    <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-    <div>
-        <figure id="fig1">
-        <img src="./img/envelope fechado.png" onmouseover="this.src='./img/envelope aberto.png'" onmouseout="this.src='./img/envelope fechado.png'">
-      </figure>
-    </div>
-       
-    </section>
-    </main>
+  <div class="carta">
+    <figure id="fig2">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog2">Ler Carta</button>
+    <dialog id="dialog2">
+      <h2>por Neiva, da Fazenda Esperança</h2>
+      <p>
+        Querida cidade,
+ Hoje foi dia de festa por aqui. Fizemos pamonha, milho assado, cantoria no terreiro.
+ Enquanto a sanfona gemia, pensei em vocês — comendo bolo de milho na praça, dançando forró na feira.
+ É bonito ver nossa comida, nossa música, nossa alegria chegando aí.
+ Parece que a gente tá mais perto, mesmo longe.
+ Tomara que vocês também sintam isso:
+ que a ponte entre nós é feita de afeto.
 
-    
-  </body>
+      </p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
 
-  <footer class="container">
-    <h2>Todas as cartas são fictícias </h2>
+  <div class="carta">
+    <figure id="fig3">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog3">Ler Carta</button>
+    <dialog id="dialog3">
+      <h2>por Leah, do Vale do Orvalho
+</h2>
+      <p>Oi, minha cidade,
+ Hoje fiz doce de caju e embalei com fita de retalho.
+ Tem carinho em cada potinho, sabia?
+ Minha luta não é só contra a seca ou o preço injusto.
+ É pra seguir vivendo aqui, com dignidade, com minha cultura, com meus saberes.
+ Às vezes a cidade parece longe. Mas quando alguém me escreve, elogia meu doce, posta minha história... eu sinto: estamos juntos.
+ E quando o campo e a cidade se reconhecem como parte da mesma vida, isso sim é motivo de festa.
+</p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
+
+  <div class="carta">
+    <figure id="fig4">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog4">Ler Carta</button>
+    <dialog id="dialog4">
+      <h2>por Damião, Fazenda Girassol </h2>
+      <p>
+        Oi, cidade,
+ Hoje carreguei o caminhão com melancia, queijo e esperança.
+ Amanhã tem feira, e eu vou feliz.
+ Feliz porque, lá, escuto gente agradecendo, perguntando meu nome, rindo com gosto.
+ A gente planta pensando em alimentar. Mas quando a cidade nos olha nos olhos, é como se colhêssemos também.
+ Cidade, tua fome encontra nossa vontade de partilhar.
+
+      </p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
+
+  <div class="carta">
+    <figure id="fig5">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog5">Ler Carta</button>
+    <dialog id="dialog5">
+      <h2>por Dona Cida, Fazenda Névoa da Manhã</h2>
+      <p>
+       Querida cidade,
+ Hoje a enxada pesou mais que o normal.
+ O sol ardeu, a plantação murchou, e ninguém apareceu na feira.
+ Voltei com a carroça quase cheia… e o coração, vazio.
+ Às vezes acho que vocês esqueceram da gente.
+ Mas sigo aqui, esperando uma escuta, um olhar, um gesto.
+ Quem sabe, um dia, o campo não seja mais silêncio pra vocês.</p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
+
+  <div class="carta">
+    <figure id="fig6">
+      <img src="./img/envelope fechado.png"
+        onmouseover="this.src='./img/envelope aberto.png'"
+        onmouseout="this.src='./img/envelope fechado.png'"
+        alt="Envelope ilustrativo" />
+    </figure>
+    <button class="openDialog" data-dialog="dialog6">Ler Carta</button>
+    <dialog id="dialog6">
+      <h2>por Elias, da Fazenda Pinheiro Bravo</h2>
+      <p>
+        Sou Elias. Hoje colhi milho com meu pai. Ele diz que cada espiga é como um filho: precisa de cuidado desde o começo.
+ O campo ensina muita coisa, sabia?
+ Ensina a ouvir o tempo, a respeitar o que não se vê.
+ Espero que aí também tenha quem escute o que não se fala.
+ Porque o silêncio do campo também tem voz.
+
+      </p>
+      <button class="closeDialog">Fechar</button>
+    </dialog>
+  </div>
+</section>
+
+<footer class="container">
+      <h2>Todas as cartas são fictícias </h2>
     <p>2025 | por
       <a href="https://github.com/BeaMontowski" target="_blank">@BeaMontowski</a>
     </p>
-  </footer>
-</html>
+</footer>
+
+

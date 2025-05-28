@@ -42,6 +42,7 @@ main{
 
 main h1{
     color: var(--ferrugem);
+    font-family: "Amarante", serif;
 }
 main p{
     color: var(--verdeagua);
@@ -49,6 +50,12 @@ main p{
     font-family: "Amarante", serif;
     font-weight: bold;
 }
+
+main h2{
+     color: var(--ferrugem);
+    padding: 20px;
+    font-family: "Amarante", serif;
+    }
 
 section{
     display: flex;
@@ -62,26 +69,60 @@ figure, figure img{
     height: 250px;
 }
 
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    color: #D4EFF2;
+    background-color: #4D733E;
+    text-align: center;
+    }
+
+dialog{
+    margin: 250px;
+    background-color: #F2E3B6;
+   border-color: #BF8049;
+   padding: 20px;
+   
+    }
+
+    dialog h2{
+        font-family: "Cedarville Cursive", cursive;
+        color: #351600;
+    }
+    
+ dialog p{
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 1.5rem ;
+        color: #351600;
+    }
+
+    dialog button{
+        color: #ffffff;
+        background-color: #A64600;
+        }
 
 
 
-
-footer {
-    background-color:var(--verdemusgo);
-    color: white;
-    bottom:0;
-    position:fixed;
-    width:100%;
-    font-family: "Roboto", sans-serif;
+footer.container {
+  text-align: center;
+  background-color: var(--verdemusgo); 
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  
 }
+
 footer h2 {
     text-align: center;
     font-size: 0.99rem;
-}
-footer p {
+    color: #ffffff;
+    }
+    footer p {
+    color: #ffffff;
     text-align: center;
     font-size: 0.8rem;
-}
-footer a{
+
+    }
+footer a {
     color: #ffffff;
     }
